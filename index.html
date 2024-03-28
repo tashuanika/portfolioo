@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cfd4b1d1e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p>Portfolio</p>
+                <!-- <img src="img\logo1.png" class="logo"> -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Web Developer</p>
+                <h1>Hi,I am <span>Anika Singh</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img\background.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a pre-finalyear student pursuing B.tech in Information technology from Banasthali Vidyapith.
+                        A passionate and aspiring Software Developer 🚀 having an experience of building Web
+                        applications with JavaScript / Reactjs and some other cool libraries and frameworks.
+                        I am open to learning and contributing to the community by innovating and working hard.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>C</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Btech From Banasthali Vidyapith</li>
+                            <li><span>2021</span><br>CBSE-XII</li>
+                            <li><span>2019</span><br>CBSE-X</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>May(2023)-Ju(2023)</span><br>Web Development Internship at Octanet</li>
+                            <li><span>Oct(2022)</span><br>Microsoft Hackathon Vice Chancellor(Top 10)</li>
+                            <li><span>Jan(2022)-Dec(2022)</span><br>Event Manager at Geeky Hub Community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png">
+                    <div class="layer">
+                        <h3><b>Instagram clone</b></h3>
+                        <p>Instagram clone is our pre-built social media app software that helps entrepreneurs to build
+                            an Instagram-like app.Features can be added, deleted, and modified easily in the Instagram
+                            clone script.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.jpg">
+                    <div class="layer">
+                        <h3><b>Tic Tac Toe</b></h3>
+                        <p>Basic game played by Human(user) and computer automatically.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.jpg">
+                    <div class="layer">
+                        <h3><b>OmniDoc</b></h3>
+                        <p>An Online Consultation App that connects patients to available doctors for online
+                            consultation and also allows doctors to email subscriptions in printable format.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>2003anikasingh@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8755401920</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anika-singh-b7728b22a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="img/my-cv.pdf" download class="btn btn2" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Mesage"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Anika.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
